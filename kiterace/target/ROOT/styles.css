@@ -1,6 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Russo+One);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 @charset "UTF-8";
+
+
+html,body { 
+  height:90%; 
+}
 
 html {
 	background: url(images/chapin2.jpg) no-repeat center center fixed; 
@@ -14,14 +19,20 @@ body {
 	/* background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#008ced), to(#00528b)); */
 	background: none;
 	padding: 0px;
-}
-
-#menuContainer{
-	background: #353535;
+	margin:0px;
 }
 
 #content {
   border: none;
+  zoom: 1;
+  background: rgba(0, 0, 0, 0.50) ;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.50)  0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.50) ), color-stop(100%, rgba(0, 0, 0, 0.50)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.50)  0%, black 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.50)  0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.50)  0%, black 100%);
+  background: linear-gradient(top, rgba(0, 0, 0, 0.50)  0%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
 
   -webkit-border-top-right-radius: 5px;
   -moz-border-top-right-radius: 5px;
@@ -36,10 +47,11 @@ body {
   border-top-left-radius: 5px;
   
   margin: auto;
-  font-family: 'Lato', sans-serif;
+  padding: 5% 10%;
+  font-family: 'Asap';
   margin-top: -1px;
-  width: 700px;
-  height: 500px;
+  width: auto;
+  height: 75%;
 }
 
 p {
@@ -47,11 +59,12 @@ p {
 }
 
 #title {
-  font-family: 'Russo One';
-  font-size: 30px;
+  font-family: 'Architects Daughter';
+  font-size: 60px;
   text-align: center;
+  color: white;
   
-  background: none;
+  background: black;
   border: none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -64,8 +77,8 @@ p {
   margin-top: 10px;
   margin-bottom: -1px;
   margin-top: -1px;
-  width: 700px;
-  height: 50px;
+  width: 100%;
+  height: auto;
 }
 
 #header {
@@ -80,7 +93,7 @@ p {
   margin: auto;
   
   margin-top: 10px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Architects Daughter';
   margin-top: -1px;
   width: 700px;
   height: 50px;
@@ -98,27 +111,67 @@ p {
   margin: auto;
   
   margin-top: 10px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin-top: 10px;
   width: 700px;
   height: 25px;
 }
 
-#cssmenu ul {
+#menuContainer{
+  zoom: 1;
+  background: black;
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.75)));
+  background: -webkit-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
+  
+  border: 1px solid black;
+}
+
+
+/* Base Styles */
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  border: 0;
+  line-height: 1;
+  font-family: 'Oswald';
+}
+#cssmenu {
+  border: 0px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   width: auto;
-  position: relative;
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  background: #353535;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 1px solid #353535;
-  zoom: 1;
-  width: 550px;
+  width: 425px;
   margin: 0 auto;
+}
+#cssmenu ul {
+  /* zoom: 1;
+  background: black;
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.75)));
+  background: -webkit-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
+  */
+  
+  padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 #cssmenu ul:before {
   content: '';
@@ -130,27 +183,62 @@ p {
   clear: both;
 }
 #cssmenu li {
-  display: block;
   float: left;
-  margin: 0;
-  padding: 0 4px;
+  margin: 0 5px 0 0;
+  border: 1px solid transparent;
 }
 #cssmenu li a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 8px 15px 9px 15px;
   display: block;
-  float: left;
-  color: #999999;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 20px 7px 20px;
-  border-bottom: 3px solid transparent;
+  text-decoration: blink;
+  color: white;
+  border: 1px solid transparent;
+  font-size: 15px;
 }
-#cssmenu li a:hover {
-  color: #FFFFFF;
-  border-bottom: 3px solid #00b8fd;
+#cssmenu li.active {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #36b0b6;
 }
 #cssmenu li.active a {
-  display: inline;
-  border-bottom: 3px solid #00b8fd;
-  float: left;
-  margin: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  background: transparent;
+  border: 1px solid black;
+  -moz-box-shadow: inset 0 5px 10px black;
+  -webkit-box-shadow: inset 0 5px 10px black;
+  box-shadow: inset 0 5px 10px black;
+}
+#cssmenu li:hover {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+#cssmenu li:hover a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  background: transparent;
+  border: 1px solid black;
+  -moz-box-shadow: inset 0 5px 10px black;
+  -webkit-box-shadow: inset 0 5px 10px black;
+  box-shadow: inset 0 5px 10px black;
 }
