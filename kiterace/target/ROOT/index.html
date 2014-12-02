@@ -7,31 +7,86 @@
    <link rel="stylesheet" href="styles.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="script.js"></script>
-   <title>CSS MenuMaker</title>
+   <script src="http://code.jquery.com/jquery-1.4.min.js" type="text/javascript"></script>
+   <title>Planet of the Cape</title>
 </head>
 <body>
 
 <div id='title'>Planet of the Cape</div>
 
-<div id='cssmenu'>
-<ul>   
-   <li class='active'><a href='index.html'><span>Home</span></a></li>
-   <li><a href='mission.html'><span>Mission</span></a></li>
-   <li><a href='details.html'><span>Race Details</span></a></li>
-   <li><a href='sponsors.html'><span>Sponsors</span></a></li>
-</ul>
+
+<div id='menuContainer'>
+	<div id='cssmenu'>
+	<ul>   
+	   <li><a id="home" 	href='#'><span>Home</span></a></li>
+	   <li><a id="mission" 	href='#'><span>Mission</span></a></li>
+	   <li><a id="details"	href='#'><span>Race Details</span></a></li>
+	   <li><a id="sponsors" href='#'><span>Sponsors</span></a></li>
+
+	</ul>
+	</div>
 </div>
 
-<div id='header'>
+
+	<div id="content" style="clear:both;">
 	</div>
+	
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	       $("#home").click(function(){
+	        $('#content').load('home.html');
+	         //alert("Thanks for visiting!");
+	       }); 
+	
+	       $("#mission").click(function(){
+	        $('#content').load('mission.html');
+	         //alert("Thanks for visiting!");
+	       });
+	       
+	       $("#details").click(function(){
+		        $('#content').load('details.html');
+		         //alert("Thanks for visiting!");
+		       });
+	       
+	       $("#sponsors").click(function(){
+		        $('#content').load('sponsors.html');
+		         //alert("Thanks for visiting!");
+		       });
+	     });
+	</script>
 
-	<div class='content'>
 
-		<p>Details</p>
 
+<!--TESTING!!!!!!!!!!!!!!!!!!!!!!!!! --
+
+
+	<ul>
+	    <li><a id="page1" href="#">About</a></li>
+	    <li><a id="page2" href="#">Community</a></li>
+	    <li><a id="page3" href="#">Sponsor</a></li>
+	</ul>
+	
+	<div id="result" style="clear:both;">
 	</div>
+	
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	       $("#page1").click(function(){
+	        $('#result').load('index.html');
+	         //alert("Thanks for visiting!");
+	       }); 
+	
+	       $("#page2").click(function(){
+	        $('#result').load('pages/page2.html');
+	         //alert("Thanks for visiting!");
+	       });
+	     });
+	</script>
 
-	<div id="footer">
+
+<!--TESTING!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+
 
 </body>
 <html>
