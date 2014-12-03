@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Russo+One);
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Armata);
+@import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 @charset "UTF-8";
 
 
@@ -20,6 +20,43 @@ body {
 	background: none;
 	padding: 0px;
 	margin:0px;
+}
+
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+  font-family: 'Pathway Gothic One';
+  font-size: 22px;
+  color: white;
+}
+
+#title {
+  font-family: 'Armata';
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  
+  background: black;
+  
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;  
+  
+  margin: auto;
+  
+  margin-top: 10px;
+  margin-bottom: -1px;
+  margin-top: -1px;
+  width: 100%;
+  height: auto;
 }
 
 #content {
@@ -49,36 +86,13 @@ body {
   margin: auto;
   padding: 5% 10%;
   font-family: 'Asap';
-  margin-top: -1px;
+  margin-top: 0px;
   width: auto;
   height: 75%;
 }
 
 p {
 	padding-left: 5px;	
-}
-
-#title {
-  font-family: 'Architects Daughter';
-  font-size: 60px;
-  text-align: center;
-  color: white;
-  
-  background: black;
-  border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;  
-  
-  margin: auto;
-  
-  margin-top: 10px;
-  margin-bottom: -1px;
-  margin-top: -1px;
-  width: 100%;
-  height: auto;
 }
 
 #header {
@@ -111,7 +125,7 @@ p {
   margin: auto;
   
   margin-top: 10px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Slab';
   margin-top: 10px;
   width: 700px;
   height: 25px;
@@ -129,20 +143,13 @@ p {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
   
   border: 1px solid black;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 
 /* Base Styles */
-#cssmenu ul,
-#cssmenu li,
-#cssmenu a {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  line-height: 1;
-  font-family: 'Oswald';
-}
+
 #cssmenu {
   border: 0px solid black;
   -webkit-border-radius: 5px;
@@ -196,9 +203,7 @@ p {
   padding: 8px 15px 9px 15px;
   display: block;
   text-decoration: blink;
-  color: white;
   border: 1px solid transparent;
-  font-size: 15px;
 }
 #cssmenu li.active {
   -webkit-border-radius: 5px;
