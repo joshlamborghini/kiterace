@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Armata);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 @import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 @charset "UTF-8";
 
@@ -35,13 +35,44 @@ body {
   color: white;
 }
 
+.gradient6 {
+	background: #000;
+	padding: 30px 0 30px 30px;
+	margin: 30px 0 50px;
+}
+.gradient6 h1 {
+	font: bold 310%/100% "Lucida Grande", Arial, sans-serif;
+	position: relative;
+	margin: 0;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+	text-align: center;
+}
+.gradient6 h1 span {
+	background: url(images/gradient-dark-stripe.png) repeat-x;
+	position: absolute;
+	bottom: -0.1em;
+	display: block;
+	width: 100%;
+	height: 29px;
+}
+
 #title {
-  font-family: 'Armata';
+  font-family: 'Lobster';
   font-size: 60px;
   text-align: center;
-  color: white;
+  color: black;
   
-  background: black;
+  zoom: 1;
+  background: white;
+  background: -moz-linear-gradient(top, white 0%, rgba(0, 0, 0, 0.25) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, rgba(0, 0, 0, 0.25)));
+  background: -webkit-linear-gradient(top, white 0%, rgba(0, 0, 0, 0.25) 100%);
+  background: -o-linear-gradient(top, white 0%, rgba(0, 0, 0, 0.25) 100%);
+  background: -ms-linear-gradient(top, white 0%, rgba(0, 0, 0, 0.25) 100%);
+  background: linear-gradient(top, white 0%, rgba(0, 0, 0, 0.25) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
   
   border: none;
   -webkit-border-radius: 5px;
@@ -61,6 +92,7 @@ body {
 
 #content {
   border: none;
+  /*
   zoom: 1;
   background: rgba(0, 0, 0, 0.50) ;
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.50)  0%, black 100%);
@@ -70,7 +102,7 @@ body {
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.50)  0%, black 100%);
   background: linear-gradient(top, rgba(0, 0, 0, 0.50)  0%, black 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
-
+  */
   -webkit-border-top-right-radius: 5px;
   -moz-border-top-right-radius: 5px;
   -ms-border-top-right-radius: 5px;
@@ -132,19 +164,11 @@ p {
 }
 
 #menuContainer{
-  zoom: 1;
-  background: black;
-  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.75)));
-  background: -webkit-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
-  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
-  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
-  background: linear-gradient(top, black 0%, rgba(0, 0, 0, 0.75) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
+
   
-  border: 1px solid black;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border: 0px solid black;
+  border-top: 0px solid white;
+  border-bottom: 0px solid white;
 }
 
 
@@ -157,7 +181,6 @@ p {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  width: auto;
   width: 425px;
   margin: 0 auto;
 }
@@ -222,9 +245,9 @@ p {
   display: block;
   background: transparent;
   border: 1px solid black;
-  -moz-box-shadow: inset 0 5px 10px black;
-  -webkit-box-shadow: inset 0 5px 10px black;
-  box-shadow: inset 0 5px 10px black;
+  /* -moz-box-shadow: inset 0 5px 10px black; */
+  /* -webkit-box-shadow: inset 0 5px 10px black; */
+  /* box-shadow: inset 0 5px 10px black; */
 }
 #cssmenu li:hover {
   -webkit-border-radius: 5px;
@@ -232,7 +255,7 @@ p {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid #a4c9ee;
 }
 #cssmenu li:hover a {
   -webkit-border-radius: 5px;
@@ -243,7 +266,7 @@ p {
   display: block;
   background: transparent;
   border: 1px solid black;
-  -moz-box-shadow: inset 0 5px 10px black;
-  -webkit-box-shadow: inset 0 5px 10px black;
-  box-shadow: inset 0 5px 10px black;
+  /* -moz-box-shadow: inset 0 5px 10px black; */
+  /* -webkit-box-shadow: inset 0 5px 10px black; */
+  /* box-shadow: inset 0 5px 10px black; */
 }
